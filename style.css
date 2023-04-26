@@ -43,12 +43,21 @@ ul {
 
 .plan-button {
     background-color: #FE6600;
+    text-transform: capitalize;
+    font-weight: 500;
     color: white;
     border: none;
     border-radius: 6px;
-    padding: 7px 8px;
+    padding: 10px 8px;
+    text-decoration: none;
+    margin-bottom: 35px;
 }
 
+
+
+
   @media (max-width: 1250px) {
-      
+      .pricing-container {
+        flex-direction: column;
+      }
   }
