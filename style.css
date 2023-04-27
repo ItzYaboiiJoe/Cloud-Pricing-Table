@@ -4,11 +4,10 @@ body {
 
 .pricing-container {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     gap: 2rem;
     align-items: center;
-    height: 100vh;
+    height: 98vh;
 }
 
 .pricing-plan {
@@ -17,28 +16,26 @@ body {
     text-align: center;
     font-weight: bold;
     max-width: 400px;
-    padding: 15px;
+    padding: 40px;
     border-radius: 10px;
 }
 
 .plan-title {
-    font-size: 20px;
-}
-
-.plan-title , .plan-price {
+    font-size: 24px;
     font-weight: bold;
-}
-
-li , .plan-title {
-    padding: 15px;
+    margin-bottom: 10px;
 }
 
 .plan-price {
+    font-weight: bold;
     font-size: 30px;
+    margin-top: 15px;
 }
 
-ul {
+li {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .plan-button {
@@ -56,8 +53,16 @@ ul {
 
 
 
-  @media (max-width: 1250px) {
-      .pricing-container {
-        flex-direction: column;
-      }
-  }
+  @media (max-width: 1150px) {
+   .pricing-container {
+    flex-direction: column;
+   }
+
+   .pricing-plan {
+    padding: 10px;
+   }
+
+   .plan-price {
+    font-size: 40px;
+   }
+}
